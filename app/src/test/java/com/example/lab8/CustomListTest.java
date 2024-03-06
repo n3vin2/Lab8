@@ -75,17 +75,17 @@ public class CustomListTest {
      * Check if the city no longer in the list
      * Try deleting the same city again from the list
      * Check that an illegal argument exception was thrown
-     *//*
+     */
     @Test
     public void testDeleteCities() {
         list = MockCityList();
         City city = new City("Estevan", "SK");
-        list.add(city);
+        list.addCity(city);
         assertTrue(list.hasCity(city));
-        list.delete(city);
+        list.deleteCity(city);
         assertFalse(list.hasCity(city));
         assertThrows(IllegalArgumentException.class, () ->{
-            list.delete(city);
+            list.deleteCity(city);
         });
-    }*/
+    }
 }
