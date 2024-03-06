@@ -56,7 +56,7 @@ public class CustomListTest {
      * Check if the city is not in the list
      * Add the city into the list
      * Check if the city is now in the list
-     *//*
+     */
     @Test
     public void testHasCities() {
         list = MockCityList();
@@ -64,7 +64,7 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
         list.add(city);
         assertTrue(list.hasCity(city));
-    }*/
+    }
 
     /**
      * Make a city but don't add anything to the list
