@@ -76,10 +76,10 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void deleteCity(City city) {
-        /*if (!(this.hasCity(city))) {
+        if (!(this.hasCity(city))) {
             throw new IllegalArgumentException();
         }
-        cities.remove(city);*/
+        cities.remove(city);
     }
 
 }
